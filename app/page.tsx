@@ -4,6 +4,9 @@ import styled from "styled-components";
 import IntroSection from "./intro-section";
 import ProfileSection from "./profile-section";
 import CareerSection from "./career-section";
+import SkillSection from "./skill-section";
+import EducationSection from "./education-section";
+import CertificateSection from "./certificate-section";
 
 //#region
 const Continer = styled.div`
@@ -21,6 +24,12 @@ export default function Home() {
       <ProfileSection />
 
       <CareerSection />
+
+      <SkillSection />
+
+      <EducationSection />
+
+      <CertificateSection />
     </Continer>
   );
 }
