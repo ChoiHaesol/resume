@@ -1,7 +1,8 @@
 "use client";
 
 import styled from "styled-components";
-import IntroSection from "./Intro-section";
+import IntroSection from "./intro-section";
+import ProfileSection from "./profile-section";
 
 //#region
 const Continer = styled.div`
@@ -14,6 +15,8 @@ export default function Home() {
   return (
     <Continer>
       <IntroSection />
+
+      <ProfileSection />
     </Continer>
   );
 }
