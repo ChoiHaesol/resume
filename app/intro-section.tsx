@@ -8,9 +8,7 @@ import { Divider, SectionTitle } from "./styles";
 import Image from "next/image";
 
 //#region
-const Container = styled.div`
-  padding-top: 80px;
-`;
+const Container = styled.div``;
 
 const Title = styled.h1`
   font-weight: 700;
@@ -36,9 +34,6 @@ const LinkWrapper = styled.div`
 
 const LinkItem = styled.p`
   margin: 8px 0;
-  a {
-    text-decoration: underline;
-  }
 `;
 //#endregion
 

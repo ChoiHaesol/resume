@@ -5,7 +5,6 @@ import styled from "styled-components";
 const Container = styled.div`
   p > span {
     color: rgba(155, 155, 155, 1);
-    fill: rgba(155, 155, 155, 1);
   }
 `;
 

@@ -5,7 +5,7 @@ export const Divider = styled.div`
   height: 1px;
   visibility: visible;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 16px 0;
+  margin: 32px 0;
 `;
 
 export const SectionTitle = styled.h2`

@@ -6,7 +6,11 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+p {
+  margin: 8px 0;
 }
 
 * {
