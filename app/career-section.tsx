@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Divider, SectionTitle } from "./styles";
+import { motion } from "framer-motion";
+import { variants } from "@/util/aninmate";
 
 //#region
-const Container = styled.div``;
 
 const SectionContent = styled.div`
   display: flex;
@@ -26,7 +27,7 @@ const Period = styled.p`
 
 const ListWrapper = styled.div``;
 
-const ListItem = styled.div`
+const ListItem = styled(motion.div)`
   margin-bottom: 32px;
 `;
 
@@ -45,7 +46,12 @@ const Tag = styled.p`
 
 const CareerSection = () => {
   return (
-    <Container>
+    <motion.div
+      variants={variants}
+      initial="out"
+      whileInView="in"
+      viewport={{ once: true }}
+    >
       <SectionTitle>👩‍💻 Career</SectionTitle>
 
       <SectionContent>
@@ -56,7 +62,12 @@ const CareerSection = () => {
         </TitleWrapper>
 
         <ListWrapper>
-          <ListItem>
+          <ListItem
+            variants={variants}
+            initial="out"
+            whileInView="in"
+            viewport={{ once: true }}
+          >
             <Link href="https://www.stayfolio.com/">Stayfolio</Link>
             <Period>2021.01 - 2021. 05</Period>
             <p>숙박 예약 사이트</p>
@@ -64,7 +75,12 @@ const CareerSection = () => {
             <Tag>#React #Nextjs #Typescript #Ruby on rails</Tag>
           </ListItem>
 
-          <ListItem>
+          <ListItem
+            variants={variants}
+            initial="out"
+            whileInView="in"
+            viewport={{ once: true }}
+          >
             <Link href="https://derbystars.com/">Derby Stars</Link>
             <Period>2021.10 - 2022.02</Period>
             <p>NFT기반 게임 사이트</p>
@@ -72,7 +88,12 @@ const CareerSection = () => {
             <Tag>#React #Nextjs #Typescript</Tag>
           </ListItem>
 
-          <ListItem>
+          <ListItem
+            variants={variants}
+            initial="out"
+            whileInView="in"
+            viewport={{ once: true }}
+          >
             <Link href="https://lcm-mint.purpleworks.co.kr">
               Lonely Cat Mafia
             </Link>
@@ -82,7 +103,12 @@ const CareerSection = () => {
             <Tag>#React #Nextjs #Typescript</Tag>
           </ListItem>
 
-          <ListItem>
+          <ListItem
+            variants={variants}
+            initial="out"
+            whileInView="in"
+            viewport={{ once: true }}
+          >
             <Link href="https://www.kolonsport.com/">코오롱스포츠</Link>
             <Period>2023.01 - 2023.03</Period>
             <p>등산 / 스포츠 의류 쇼핑몰 사이트</p>
@@ -90,7 +116,12 @@ const CareerSection = () => {
             <Tag>#React #Nextjs #Typescript #StyledComponent</Tag>
           </ListItem>
 
-          <ListItem>
+          <ListItem
+            variants={variants}
+            initial="out"
+            whileInView="in"
+            viewport={{ once: true }}
+          >
             <Link href="https://www.gfore.kr">G/FORE</Link>
             <Period>2023.04 - 2023.05</Period>
             <p>골프 의류 쇼핑몰 사이트</p>
@@ -98,7 +129,12 @@ const CareerSection = () => {
             <Tag>#React #Nextjs #Typescript #StyledComponent</Tag>
           </ListItem>
 
-          <ListItem>
+          <ListItem
+            variants={variants}
+            initial="out"
+            whileInView="in"
+            viewport={{ once: true }}
+          >
             <Link href="https://www.kolonsport.com/Community">
               코오롱스포츠 - 솟솟커뮤니티
             </Link>
@@ -108,7 +144,12 @@ const CareerSection = () => {
             <Tag>#React #Nextjs #Typescript #StyledComponent</Tag>
           </ListItem>
 
-          <ListItem>
+          <ListItem
+            variants={variants}
+            initial="out"
+            whileInView="in"
+            viewport={{ once: true }}
+          >
             <Link href="https://www.freker.kr/">Freker</Link>
             <Period>2023.06 - 2023.08</Period>
             <p>의류 쇼핑몰 사이트</p>
@@ -116,7 +157,12 @@ const CareerSection = () => {
             <Tag>#React #Nextjs #Typescript #StyledComponent</Tag>
           </ListItem>
 
-          <ListItem>
+          <ListItem
+            variants={variants}
+            initial="out"
+            whileInView="in"
+            viewport={{ once: true }}
+          >
             <Link href="https://www.re-code.co.kr/">Re;code</Link>
             <Period>2023.10 - 2023.12</Period>
             <p>의류 쇼핑몰 사이트</p>
@@ -127,7 +173,7 @@ const CareerSection = () => {
       </SectionContent>
 
       <Divider />
-    </Container>
+    </motion.div>
   );
 };
 

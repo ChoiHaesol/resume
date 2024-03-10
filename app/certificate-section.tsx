@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { SectionTitle } from "./styles";
+import { motion } from "framer-motion";
+import { variants } from "@/util/aninmate";
 
 //#region
-const Container = styled.div``;
 
 const ItemWrapper = styled.div`
   margin-bottom: 32px;
@@ -23,7 +24,12 @@ const Period = styled.p`
 
 const CertificateSection = () => {
   return (
-    <Container>
+    <motion.div
+      variants={variants}
+      initial="out"
+      whileInView="in"
+      viewport={{ once: true }}
+    >
       <SectionTitle>🪪 Certificate</SectionTitle>
 
       <ItemWrapper>
@@ -35,7 +41,7 @@ const CertificateSection = () => {
         <Title>컴퓨터활용능력2급</Title>
         <Period>2017 / 대한상공회의소</Period>
       </ItemWrapper>
-    </Container>
+    </motion.div>
   );
 };
 

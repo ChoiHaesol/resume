@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Divider, SectionTitle } from "./styles";
+import { variants } from "@/util/aninmate";
+import { motion } from "framer-motion";
 
 //#region
-const Container = styled.div``;
 
 const ItemWrapper = styled.div`
   margin-bottom: 32px;
@@ -23,7 +24,12 @@ const Period = styled.p`
 
 const EducationSection = () => {
   return (
-    <Container>
+    <motion.div
+      variants={variants}
+      initial="out"
+      whileInView="in"
+      viewport={{ once: true }}
+    >
       <SectionTitle>📚 Educatioin</SectionTitle>
 
       <ItemWrapper>
@@ -39,7 +45,7 @@ const EducationSection = () => {
       </ItemWrapper>
 
       <Divider />
-    </Container>
+    </motion.div>
   );
 };
 

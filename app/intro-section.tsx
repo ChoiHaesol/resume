@@ -6,9 +6,10 @@ import styled from "styled-components";
 import profile from "@/public/profile.jpg";
 import { Divider, SectionTitle } from "./styles";
 import Image from "next/image";
+import { variants } from "@/util/aninmate";
+import { motion } from "framer-motion";
 
 //#region
-const Container = styled.div``;
 
 const Title = styled.h1`
   font-weight: 700;
@@ -39,7 +40,12 @@ const LinkItem = styled.p`
 
 const IntroSection = () => {
   return (
-    <Container>
+    <motion.div
+      variants={variants}
+      initial="out"
+      whileInView="in"
+      viewport={{ once: true }}
+    >
       <Title>최해솔 (Choi Haesol)</Title>
 
       <IntroductionWrapper>
@@ -69,7 +75,7 @@ const IntroSection = () => {
         </Introduction>
       </IntroductionWrapper>
       <Divider />
-    </Container>
+    </motion.div>
   );
 };
 
